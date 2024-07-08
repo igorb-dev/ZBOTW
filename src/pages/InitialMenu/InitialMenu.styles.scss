@@ -1,0 +1,78 @@
+.InitialMenu {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets//BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .containerLogo {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    .containerMenus {
+        margin-right: 55px;
+        margin-top: 150px;
+    }
+
+    .containerMenus li{
+        color: #fff;
+        text-align: end;
+        font-size: 24px;
+        margin-bottom: 18px;
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .containerMenus li img{
+        margin-right: 4px;
+    }
+
+    .icon {
+        top: 50%;
+        right: 4px;
+        transform: translateY(-50%);
+        animation: moveIcon 0.8s linear infinite alternate;
+        opacity: 0;
+      }
+      
+      @keyframes moveIcon {
+        to {
+          transform: translateX(2px);
+        }
+        from {
+          transform: translateX(-2px);
+        }
+      }
+
+      .containerMenus li:hover {
+        text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    }
+
+    .containerMenus li:hover img{
+        opacity: 1;
+    }
+
+    .containerNintendo {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .containerNintendo p {
+        margin: 0 0 2px 0;
+        padding: 0;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: end;
+
+    }
+}
