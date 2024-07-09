@@ -39,16 +39,16 @@
         top: 50%;
         right: 4px;
         transform: translateY(-50%);
-        animation: moveIcon 0.8s linear infinite alternate;
+        animation: moveIcon 0.5s linear infinite alternate;
         opacity: 0;
       }
       
       @keyframes moveIcon {
         to {
-          transform: translateX(2px);
+          transform: translateX(4px);
         }
         from {
-          transform: translateX(-2px);
+          transform: translateX(-4px);
         }
       }
 
